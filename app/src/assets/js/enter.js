@@ -3,6 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import classnames from 'classnames';
 import Enterback from '../img/enter.jpg';
 import logo from '../img/logo.png';
+import logotext from '../img/logotext.png';
 
 
 
@@ -34,7 +35,8 @@ class Enter extends React.Component {
 
                     <h1 className="logo">
                         <a className="brand" href="/">
-                            <img src={logo} width="213" alt="blue-broun" />
+                            <img src={logo} width="78" height="72" alt="blue-broun" />
+                            <img src={logotext} width="163" height="40" alt="Merkury"/>
 
                         </a>
                     </h1>
@@ -71,20 +73,26 @@ class Enter extends React.Component {
                     </TabPane>
                     <TabPane tabId="2">
                         <Row>
-                            <Col sm="6">
+                            <Col sm="12">
                                 <Card body>
-                                    <CardTitle>Special Title Treatment</CardTitle>
-                                    <CardText>With supporting text below as a natural lead-in to additional
-                                        content.</CardText>
-                                    <Button>Go somewhere</Button>
-                                </Card>
-                            </Col>
-                            <Col sm="6">
-                                <Card body>
-                                    <CardTitle>Special Title Treatment</CardTitle>
-                                    <CardText>With supporting text below as a natural lead-in to additional
-                                        content.</CardText>
-                                    <Button>Go</Button>
+                                    <div className="popup-enter">
+                                        <h2 className="title-enter text-center">Welcome <span>back!</span></h2>
+                                        <form action="#" className="enter-site flex-column" method="get">
+                                            <ul className="list-data">
+                                                <li className="item-data">
+                                                    <div className="icon-text"><i className="fa fa-user-o" aria-hidden="true" /></div>
+                                                    <input type="text" id="yourname" placeholder="Username"/>
+                                                </li>
+                                                <li className="item-data">
+                                                    <div className="icon-text"><i className="fa fa-lock" aria-hidden="true" /></div>
+                                                    <input type="password" id="mail" placeholder="Password"/>
+                                                </li>
+                                                <li className="item-data">
+                                                    <button type="submit">Enter<i className="fa fa-chevron-right" aria-hidden="true" /></button>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
                                 </Card>
                             </Col>
                         </Row>

@@ -7,15 +7,15 @@
   .house {
     width: 100vw;
     height: auto;
-    margin-top: -100px;
+    margin-top: -120px;
     z-index: 1;
   }
   .popup {
     position: absolute;
-    width: 1200px;
-    top: 20%;
+    width: 1000px;
+    top: 10%;
     left: 50%;
-    margin-left: -600px;
+    margin-left: -500px;
     z-index: 2;
     header.popup-header {
       background: #0e1a35;
@@ -24,9 +24,10 @@
         margin-bottom: 0;
       }
       .nav-tabs .nav-link {
-        height: 150px;
+        height: 125px;
         padding: 0 50px;
-        line-height: 150px;
+        line-height: 125px;
+        border: none;
         border-bottom: 15px solid #0e1a35;
         color: #ffffff;
         font-family: 'Roboto', 'Arial', sans-serif;
@@ -39,6 +40,84 @@
         background-color: #0e1a35;
         border-color: #5584ff;
       }
+
+
+
     }
   }
 }
+.popup-enter {
+  .title-enter {
+    color: #8492af;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    span {
+      color: #5384ff;
+    }
+  }
+  .enter-site {
+    width: 500px;
+    margin: 0 auto;
+    .list-data {
+      padding-bottom: 50px;
+      .item-data {
+        position: relative;
+        .icon-text {
+          position: absolute;
+          top: 0;
+          left: 15px;
+          font-size: 30px;
+        }
+        input {
+          width: 100%;
+          padding-left: 60px;
+          padding-top: 22px;
+          padding-bottom: 22px;
+          height: 19px;
+          color: #8492af;
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 14.4px;
+          border: none;
+          border-bottom: 1px solid #8492af;
+        }
+      }
+      .item-data:nth-child(2) {
+        .icon-text {
+          position: absolute;
+          top: -5px;
+          left: 20px;
+          font-size: 35px;
+        }
+      }
+
+    }
+    .item-data:last-child {
+      padding-top: 50px;
+      button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 387px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 36px;
+        background-color: #5584ff;
+        border: none;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        .fa {
+          position: absolute;
+          right: 15%;
+          top: 45%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
