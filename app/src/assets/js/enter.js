@@ -70,7 +70,7 @@ class Enter extends React.Component {
                                 <Card body>
                                     <div className="popup-signup">
                                         <h2 className="title-signup text-center">Sign <span>up!</span></h2>
-                                        <form action="#" className="enter-site flex-column" method="get">
+                                        <form action="#" className="signup-site flex-column" method="get">
                                             <ul className="list-data">
                                                 <li className="item-data">
                                                     <div className="icon-text"><i className="fa fa-user-o" aria-hidden="true" /></div>
