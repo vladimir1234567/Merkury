@@ -68,8 +68,8 @@ class Enter extends React.Component {
                         <Row>
                             <Col sm="12">
                                 <Card body>
-                                    <div className="popup-enter">
-                                        <h2 className="title-enter text-center">Welcome <span>back!</span></h2>
+                                    <div className="popup-signup">
+                                        <h2 className="title-signup text-center">Sign <span>up!</span></h2>
                                         <form action="#" className="enter-site flex-column" method="get">
                                             <ul className="list-data">
                                                 <li className="item-data">
@@ -81,7 +81,15 @@ class Enter extends React.Component {
                                                     <input type="password" id="mail" placeholder="Password"/>
                                                 </li>
                                                 <li className="item-data">
-                                                    <button type="submit">Enter<i className="fa fa-chevron-right" aria-hidden="true" /></button>
+                                                    <div className="icon-text"><i className="fa fa-envelope-o" aria-hidden="true" /></div>
+                                                    <input type="email" id="yourmail" placeholder="Usermail" />
+                                                </li>
+                                                <li className="item-data">
+                                                    <div className="icon-text"><i className="fa fa-mobile" aria-hidden="true" /></div>
+                                                    <input type="text" id="yourphone" placeholder="Userphone"/>
+                                                </li>
+                                                <li className="item-data">
+                                                    <button type="submit">Sign up<i className="fa fa-chevron-right" aria-hidden="true" /></button>
                                                 </li>
                                             </ul>
                                         </form>
