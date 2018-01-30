@@ -67,7 +67,26 @@ class Enter extends React.Component {
                     <TabPane tabId="1">
                         <Row>
                             <Col sm="12">
-                                <h4>Tab 1 Contents</h4>
+                                <Card body>
+                                    <div className="popup-enter">
+                                        <h2 className="title-enter text-center">Welcome <span>back!</span></h2>
+                                        <form action="#" className="enter-site flex-column" method="get">
+                                            <ul className="list-data">
+                                                <li className="item-data">
+                                                    <div className="icon-text"><i className="fa fa-user-o" aria-hidden="true" /></div>
+                                                    <input type="text" id="yourname" placeholder="Username"/>
+                                                </li>
+                                                <li className="item-data">
+                                                    <div className="icon-text"><i className="fa fa-lock" aria-hidden="true" /></div>
+                                                    <input type="password" id="mail" placeholder="Password"/>
+                                                </li>
+                                                <li className="item-data">
+                                                    <button type="submit">Enter<i className="fa fa-chevron-right" aria-hidden="true" /></button>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </Card>
                             </Col>
                         </Row>
                     </TabPane>
