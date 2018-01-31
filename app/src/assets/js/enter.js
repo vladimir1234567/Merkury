@@ -34,7 +34,7 @@ class Enter extends React.Component {
                 <header className="popup-header d-flex justify-content-between align-items-center">
 
                     <h1 className="logo">
-                        <a className="brand" href="/">
+                        <a className="brand" href="/home">
                             <img src={logo} width="78" height="72" alt="blue-broun" />
                             <img src={logotext} width="163" height="40" alt="Merkury"/>
 
