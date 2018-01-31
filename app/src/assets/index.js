@@ -1,12 +1,11 @@
-
 import React from "react"
 import ReactDOM from "react-dom"
-import Enter from "./js/enter"
+import App from "./js/app.js"
 import "./style/main.scss"
 
 
 
 ReactDOM.render(
-    <Enter />,
+    <App />,
     document.getElementById('root')
 )
