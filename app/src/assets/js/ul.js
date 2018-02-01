@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Ul extends Component {
     render() {
         return (
-            <ul className="listMainMenu">
+            <ul className="listMainMenu d-flex flex-column">
                     {
                         _map(this.props.ololo, (item, index) => (
                             <Link

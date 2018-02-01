@@ -32,7 +32,6 @@ class Enter extends React.Component {
             <img className="house" src={Enterback} alt="City" />
             <div className="popup">
                 <header className="popup-header d-flex justify-content-between align-items-center">
-
                     <h1 className="logo">
                         <a className="brand" href="/home">
                             <img src={logo} width="78" height="72" alt="blue-broun" />
@@ -78,7 +77,7 @@ class Enter extends React.Component {
                                                 </li>
                                                 <li className="item-data">
                                                     <div className="icon-text"><i className="fa fa-lock" aria-hidden="true" /></div>
-                                                    <input type="password" id="mail" placeholder="Password"/>
+                                                    <input type="password" id="yourmail" placeholder="Password"/>
                                                 </li>
                                                 <li className="item-data">
                                                     <div className="icon-text"><i className="fa fa-envelope-o" aria-hidden="true" /></div>
