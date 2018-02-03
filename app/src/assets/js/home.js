@@ -4,7 +4,6 @@ import Ul from "./ul.js"
 class Home extends React.Component {
     render(){
         const ulLinks = [
-
             {
                 link: '/',
                 text: 'Enter',

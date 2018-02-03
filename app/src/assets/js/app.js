@@ -8,16 +8,28 @@ import Workflow from "./workflow.js";
 
 const customHistory = createBrowserHistory();
 
-
-
 class App extends Component {
-    render() {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userData: {}
+    };
+
+    this.setRootUserData = this.setRootUserData.bind(this);
+  }
+
+  setRootUserData(userData) {
+    this.setState({ userData: userData });
+  }
+
+  render() {
         return (
             <Router history={customHistory}>
                 <div>
-                        <Route path="/" exact component={Enter} />
-                        <Route path="/home" exact component={Home} />
-                        <Route path="/workflow" exact component={Workflow} />
+                    <Route path="/" exact render={(routeProps) => <Enter routeProps={routeProps} setRootUserData={this.setRootUserData} />} />
+                    <Route path="/home" exact render={(routeProps) => <Home routeProps={routeProps} userData={this.state.userData} />} />
+                    <Route path="/workflow" exact component={Workflow} />
                 </div>
             </Router>
         )
