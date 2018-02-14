@@ -4,11 +4,7 @@ import Ul from "./ul.js"
 class Home extends React.Component {
     render(){
         const ulLinks = [
-            {
-                link: '/',
-                text: 'Enter',
-                className: 'itemMainMenu'
-            },
+
             {
                 link: '/home',
                 text: 'Home',
@@ -17,6 +13,26 @@ class Home extends React.Component {
             {
                 link: '/workflow',
                 text: 'Workflow',
+                className: 'itemMainMenu'
+            },
+            {
+                link: '/statistics',
+                text: 'Statistics',
+                className: 'itemMainMenu'
+            },
+            {
+                link: '/calendar',
+                text: 'Calendar',
+                className: 'itemMainMenu'
+            },
+            {
+                link: '/users',
+                text: 'Users',
+                className: 'itemMainMenu'
+            },
+            {
+                link: '/settings',
+                text: 'Settings',
                 className: 'itemMainMenu'
             }
         ];
