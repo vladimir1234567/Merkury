@@ -1,5 +1,12 @@
-import React from "react"
-import Ul from "./ul.js"
+import React from "react";
+
+import logo from '../img/logo.png';
+import logotext from '../img/logotext.png';
+
+import Ul from "./ul.js";
+
+import "../style/styles/main-menu.scss";
+
 
 class MainMenu extends React.Component {
     render(){
@@ -38,6 +45,13 @@ class MainMenu extends React.Component {
         ];
         return (
             <div>
+                <h1 className="logo">
+                    <a className="brand" href="/home">
+                        <img src={logo} width="55" height="55" alt="blue-broun" />
+                        <img src={logotext} width="120" height="35" alt="Merkury"/>
+
+                    </a>
+                </h1>
                 <Ul ololo={ulLinks} />
             </div>
         )

@@ -1,0 +1,47 @@
+.logo {
+  width: 320px;
+  margin: 0;
+  background: #0e1a35;
+
+
+  .brand {
+    display: block;
+  padding: 25px 0 25px 45px;
+  }
+}
+.listMainMenu  {
+  background: #0e1a35;
+  width: 320px;
+
+  .itemMainMenu {
+    display: block;
+    position: relative;
+    height: 100px;
+    padding-left: 80px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100px;
+    border-left: 10px solid #0e1a35;
+
+    &:hover {
+      border-left: 10px solid #5584ff;
+      background: #122143;
+    }
+    &:active {
+      border-left: 10px solid #5584ff;
+      background: #122143;
+
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 22px;
+      background: red;
+      top: 40px;
+      left: 45px;
+    }
+  }
+
+}
