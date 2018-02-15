@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+.main-header {
+  width: 75vw;
+  height: 120px;
+  padding: 0 30px;
+  .site-control {
+    button {
+      background: $white;
+      border: 0;
+      font-size: 20px;
+    }
+  }
+  .user-control {
+    .addProject {
+      background: $blue;
+      color: $white;
+      height: 50px;
+      padding: 0 30px;
+      border: 0px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      margin-right: 25px;
+    }
+    .letter {
+      border: 0px;
+      background: $white;
+      font-size: 30px;
+      margin-right: 10px;
+
+    }
+    .bell {
+      position: relative;
+      font-size: 30px;
+      margin-right: 40px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 2px;
+        right: -4px;
+        border-radius: 50%;
+        background: $blue;
+        border: 1px solid $white;
+      }
+
+    }
+    .us-face {
+      display: block;
+      width: 55px;
+      height: 55px;
+      position: relative;
+      img {
+        display: block;
+
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 9px;
+        top: 25px;
+        right: -25px;
+        background: url("../../img/triangle.jpg") no-repeat;
+      }
+
+    }
+  }
+}
